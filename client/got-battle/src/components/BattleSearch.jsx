@@ -145,7 +145,6 @@ const BattleSearch = () => {
               value={kingValue}
               onChange={e => handleSearchInput(e)}
               id='king'
-              onBlur={() => setShowSuggestions(false)}
             />
             <Form.Control
               placeholder='Location'
@@ -154,7 +153,6 @@ const BattleSearch = () => {
               value={locationValue}
               onChange={e => handleSearchInput(e)}
               id='location'
-              onBlur={() => setShowSuggestions(false)}
             />
             <Form.Control
               placeholder='Battle type'
@@ -163,7 +161,6 @@ const BattleSearch = () => {
               value={typeValue}
               onChange={e => handleSearchInput(e)}
               id='type'
-              onBlur={() => setShowSuggestions(false)}
             />
             <Button
               variant='primary'
