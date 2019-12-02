@@ -1,0 +1,337 @@
+.home-section {
+  margin: 0px !important;
+}
+
+.home-section .list-container {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.home-section .list-container ul {
+  list-style: none;
+  height: 100%;
+}
+
+.home-section .list-container ul li {
+  position: relative;
+  display: inline;
+  margin: 1rem;
+  background: -webkit-radial-gradient(rgba(146, 162, 178, 0.3), rgba(146, 162, 178, 0.6));
+  padding: 12px;
+  color: #e8e2e6;
+  cursor: pointer;
+  font-family: 'Game of Thrones', serif;
+  font-size: 1.4rem;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.home-section .list-container ul li::after {
+  content: '';
+  display: inline;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 3px solid;
+  border-image-source: radial-gradient(rgba(146, 162, 178, 0.6), rgba(245, 245, 245, 0.6));
+  border-image-slice: 1;
+}
+
+.home-section .list-container ul li:hover {
+  -webkit-transform: scaleX(1.4);
+          transform: scaleX(1.4);
+  background: rgba(51, 51, 41, 0.6);
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  ul li {
+    margin: 3rem 1rem !important;
+    display: block !important;
+  }
+}
+
+.location-container {
+  font-size: 1.2rem;
+  font-family: "Game of Thrones", serif;
+  color: whitesmoke;
+  word-spacing: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.location-container .header {
+  top: 16rem;
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 1.8rem;
+}
+
+.location-container .ul-container {
+  background: rgba(51, 21, 1, 0.6);
+  margin-top: 15rem;
+  overflow-x: hidden;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  width: 500px;
+  max-height: 65vh;
+}
+
+.location-container .ul-container ul {
+  list-style: none;
+}
+
+.location-container .ul-container ul li {
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.location-container .ul-container ul li:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid whitesmoke;
+  border-image-source: radial-gradient(#eee, #333);
+  border-image-slice: 1;
+  width: 400px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .location-container {
+    max-width: 100%;
+  }
+  .location-container p {
+    font-size: 1.6rem !important;
+    padding-top: 1rem !important;
+  }
+  .location-container .left-col {
+    text-align: left !important;
+  }
+  .loc-right-column {
+    margin-left: 1rem;
+    max-width: 100%;
+    padding: 0px auto !important;
+  }
+  .loc-right-column .ul-container {
+    width: auto;
+    font-size: 1rem;
+  }
+}
+
+.count-container {
+  font-size: 1.2rem;
+  font-family: "Game of Thrones", serif;
+  color: whitesmoke;
+  word-spacing: 1rem;
+  letter-spacing: 0.3rem;
+  height: 100vh;
+}
+
+.count-container .text-container {
+  background: rgba(51, 21, 1, 0.6);
+}
+
+.count-container p {
+  font-size: 2.1rem;
+}
+
+.count-container .count {
+  font-size: 6.8rem;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .count-container {
+    max-width: 100%;
+    margin: 0px !important;
+  }
+  .count-container .text-container {
+    top: 3rem;
+  }
+  .count-container .text-container p {
+    font-size: 1.8rem !important;
+  }
+  .count-container .text-container .count {
+    font-size: 5.5rem;
+  }
+}
+
+.search-container {
+  font-size: 1.2rem;
+  font-family: "Game of Thrones", serif;
+  color: whitesmoke;
+  word-spacing: 1rem;
+  letter-spacing: 0.3rem;
+  min-height: 100vh;
+}
+
+.search-container .left-column {
+  padding: 3rem;
+}
+
+.search-container .left-container {
+  top: 18rem;
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 1.8rem;
+}
+
+.search-container .left-container .input-element {
+  margin: 1.5rem auto;
+}
+
+.search-container .left-container .input-element::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 20%;
+  background: #333;
+}
+
+.search-container .ul-container {
+  background: rgba(51, 21, 1, 0.6);
+  margin-top: 12rem;
+  overflow-x: hidden;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  width: 90%;
+  max-height: 65vh;
+  color: #eee;
+}
+
+.search-container .ul-container ul {
+  list-style: none;
+}
+
+.search-container .ul-container ul li {
+  margin: 1rem;
+  padding: 1rem !important;
+  border-radius: 10px;
+  cursor: default;
+  font-family: 'Product Sans', serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.search-container .ul-container ul li:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid whitesmoke;
+  border-image-source: radial-gradient(#eee, #333);
+  border-image-slice: 1;
+  margin-top: 1.5rem;
+}
+
+.search-container .ul-container ul li:before {
+  content: '';
+  display: block;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid whitesmoke;
+  border-image-source: radial-gradient(#eee, #333);
+  border-image-slice: 1;
+}
+
+.search-container .search-ul {
+  cursor: default;
+  list-style: none;
+  background: rgba(51, 21, 1, 0.8);
+  z-index: 999 !important;
+  position: absolute;
+  font-family: 'Product Sans', serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.search-container .search-ul.king {
+  margin-top: 4rem;
+}
+
+.search-container .search-ul.location {
+  margin-top: 7.8rem;
+}
+
+.search-container .search-ul.type {
+  margin-top: 11.6rem;
+}
+
+.search-container .search-ul .search-li {
+  padding: 6px;
+}
+
+.search-container .search-ul .search-li:nth-child(even) {
+  border-top: 1px solid whitesmoke;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .search-container {
+    max-width: 100%;
+  }
+  .left-column {
+    margin-left: 2rem;
+    margin-top: 55%;
+    padding: 0px !important;
+  }
+  .right-column {
+    margin-left: 2rem;
+    max-width: 100%;
+    padding: 0px !important;
+  }
+  .ul-container {
+    margin: 3rem auto !important;
+    min-width: 100%;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e8e8e8;
+}
+
+.video {
+  min-width: 100vw !important;
+  position: fixed;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+img {
+  position: fixed;
+  left: 10rem;
+  height: 9rem !important;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  img {
+    height: auto;
+    width: 90%;
+    left: 1rem;
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=style.css.map */

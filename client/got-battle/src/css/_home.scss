@@ -1,0 +1,60 @@
+@import './variables';
+
+.home-section {
+  margin: 0px !important;
+
+  .list-container {
+    min-height: 100vh;
+    min-width: 100%;
+
+    ul {
+      list-style: none;
+      height: 100%;
+
+      li {
+        position: relative;
+        display: inline;
+        margin: 1rem;
+        background: -webkit-radial-gradient(
+          rgba(146, 162, 178, 0.3),
+          rgba(146, 162, 178, 0.6)
+        );
+        padding: 12px;
+        color: #e8e2e6;
+        cursor: pointer;
+        font-family: 'Game of Thrones', serif;
+        font-size: 1.4rem;
+        transition: all 400ms ease-in-out;
+
+        &::after {
+          content:'';
+          display: inline;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          position: absolute;
+          border: 3px solid;
+          border-image-source: radial-gradient(
+            rgba(146, 162, 178, 0.6), 
+            rgba(245, 245, 245, 0.6));
+          border-image-slice: 1;
+        }
+
+        &:hover {
+          transform: scaleX(1.4);
+          background: rgba(51,51,41, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  ul{
+    li{
+      margin: 3rem 1rem !important;
+      display: block !important;
+    }
+  }
+}

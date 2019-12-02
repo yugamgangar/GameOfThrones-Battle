@@ -1,0 +1,29 @@
+$defaultFont: 'Game of Thrones', serif;
+
+@mixin headerfont-properties {
+  font-size: 1.8rem;
+  font-family: $defaultFont;
+  background: -webkit-radial-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  word-spacing: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+@mixin font-properties {
+  font-size: 1.2rem;
+  font-family: $defaultFont;
+  color: whitesmoke;
+  word-spacing: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+@mixin icon-container {
+  width: 5rem !important;
+  height: 5rem !important;
+  background: linear-gradient(to left, #d37e3c, #e4a981);
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
